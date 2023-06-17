@@ -66,3 +66,31 @@ print(f'{d}\n-------')
 print(b < a < c)  # print(a > b and a < c)
 print(a > b or a > c)
 print(not a > c)
+print('-' * 10)
+"""
+公共运算符：
+    1. + - 合并，适用于字符串、列表、元组
+    2. * - 复制，适用于字符串、列表、元组
+    3.in/not in - 判断元素是否存在
+        适用于字符串、元组、列表、字典
+"""
+# 加号运算符，乘号运算符
+# 除了三种类型外，其他的数据使用合并运算符会报错
+str1 = 'aa'
+str2 = 'bb'
+print(str1 + str2)  # aabb
+list1 = [1, 2]
+list2 = [3, 4]
+print(list1 + list2)  # [1, 2, 3, 4]
+t1 = (1, 2)
+t2 = (3, 4)
+print(t1 + t2)  # (1, 2, 3, 4)
+
+# in/ not in
+print('a' in str1)  # True
+print('5' in list1)  # False
+
+dict1 = {'name': 'lzp', 'sex': 'men'}
+print('name' in dict1.keys())  # True
+print("-" * 10)  # 复制十份
+
